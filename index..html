@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Byte Burger</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <header>
+            <img src="images/header-burger.png" id="header-img" alt="Byte Burger">
+
+            <h1>Byte Burger</h1>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="#order-form">Place Your Order</a>
+            </nav>
+        </header>
+
+
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+
+                <article>
+                    <h3>Classic Byte Burger</h3>
+                    <img src="images/classic-burger.jpg" alt="Classic Byte Burger">
+                    <p>
+                        A timeless classic with a juicy beef patty, lettuce, tomato, onions, and our special sauce.
+                        <i>$9.99</i>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Spicy Firewall Chicken</h3>
+                    <img src="images/firewall-chicken.jpg" alt="Spicy Firewall Chicken">
+                    <p>
+                        Crispy chicken tossed in spicy sauce, topped with lettuce and pepper jack cheese.
+                        <i>$9.99</i>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Code Stack Bacon Burger</h3>
+                    <img src="images/bacon-burger.jpg" alt="Code Stack Bacon Burger">
+                    <p>
+                        Double beef patties, crispy bacon, cheddar cheese, pickles, and smoky BBQ sauce.
+                        <i>$10.99</i>
+                    </p>
+                </article>
+            </section>
+
+
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+
+                <form>
+                    <p>BURGERS (how many?)</p>
+                    <label for="classic-quantity">Classic Byte Burger</label>
+                    <input type="number" id="classic-quantity" min="0">
+
+                    <label for="firewall-chicken">Spicy Firewall Chicken</label>
+                    <input type="number" id="firewall-chicken" min="0">
+
+                    <label for="bacon-burger">Code Stack Bacon Burger</label>
+                    <input type="number" id="bacon-burger" min="0">
+
+
+                    <p>CHOOSE A SIDE (Pick one)</p>
+                    <label for="fries">Fries</label>
+                    <input type="radio" id="fries" name="side">
+
+                    <label for="potato-fries">Sweet Potato Fries</label>
+                    <input type="radio" id="potato-fries" name="side">
+
+                    <label for="onion-rings">Onion Rings</label>
+                    <input type="radio" id="onion-rings" name="side">
+
+                    <p>ADD-ONS (Choose any)</p>
+                    <label for="extra-cheese">Extra Cheese (+$1.00)</label>
+                    <input type="checkbox" id="extra-cheese" name="addon">
+
+                    <label for="bacon">Bacon (+$1.50)</label>
+                    <input type="checkbox" id="bacon" name="addon">
+
+                    <label for="jalapenos">Jalapenos (+$0.75)</label>
+                    <input type="checkbox" id="jalapenos" name="addon">
+
+                    <label for="avocado">Avocado (+$1.50)</label>
+                    <input type="checkbox" id="avocado" name="addon">
+
+                    <p>SPECIAL REQUESTS</p>
+                    <label for="special-request">Special Instructions:</label>
+                    <textarea cols="45" rows="6" id="special-request" placeholder="Any special requests? Tell us here!"></textarea>
+                    <input type="submit" value="Go To Checkout">
+
+                </form>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p>Made with love by Jouvens Etienne</p>
+            <p>&copy; 2026 Byte Burger. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
